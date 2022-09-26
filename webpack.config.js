@@ -11,7 +11,7 @@ module.exports = {
     rules: [
       {
 				// 파일명이 .css로 끝나는 모든 파일에 적용
-        test: /\.css$/,
+        test: /\.css$/, 
 				// 배열 마지막 요소부터 오른쪽에서 왼쪽 순으로 적용
 				// 먼저 css-loader가 적용되고, styled-loader가 적용되어야 한다.
 				// 순서 주의!
@@ -20,6 +20,18 @@ module.exports = {
 				// node_modules는 제외해야 합니다
         exclude: /node_modules/,
       },
+      {
+        test: /\.(png|jpg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              publicPath:'./docs/',
+              name: '[name].[ext]'
+            }
+          },
+        ],
+      }
     ],
   },
   plugins: [new HtmlWebpackPlugin({
