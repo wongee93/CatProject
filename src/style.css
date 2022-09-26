@@ -1,0 +1,51 @@
+#view {
+
+    margin: 250px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    font-size: 30px;
+}
+
+#btn1 {
+    margin: 30px;
+    background-color: rgb(255, 166, 0);
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 1em;
+}
+
+#btn2 {
+    margin: 30px;
+    background-color: rgb(136, 75, 6);
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 1em;
+}
+
+#btn3 {
+    margin: 30px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 1em;
+}
+
+#cat1 {
+    display: none;
+}
+
+#cat2 {
+    display: none;
+}
+
+#cat3 {
+    display: none;
+}
